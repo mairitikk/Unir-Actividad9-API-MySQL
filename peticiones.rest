@@ -1,0 +1,36 @@
+########
+### API ####
+#########
+
+###
+POST http://localhost:3000/api/autors
+Content-Type: application/json
+
+{
+    "nombre": "Teresa",
+    "email": "tere@tere.com",
+    "imagen_url": "mmm"
+
+}
+
+###
+GET http://localhost:3000/api/autors/
+
+###
+GET http://localhost:3000/api/autors/2
+
+###
+PUT http://localhost:3000/api/autors/1
+Content-Type: application/json
+
+{
+    
+    "nombre": "Mairi Tikk",
+    "email": "mairi@mairi.com",
+    "imagen_url": "lll"
+
+
+}
+
+###
+DELETE http://localhost:3000/api/autors/4

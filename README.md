@@ -10,7 +10,7 @@ code. abrir en visual code
 
 ### installar express
 
-npm install express dotenv
+npm install express dotenv mysql2
 
 .env (para conexiones, communicacion con db)
 index.js (proyecto principal)
