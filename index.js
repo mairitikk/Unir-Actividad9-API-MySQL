@@ -8,7 +8,7 @@ const app = require('./src/app');
 require('dotenv').config();
 
 // Config Base de datos
-//require('./src/config/db');
+require('./src/config/db');
 
 // Creación del servidor, server de Node
 const server = http.createServer(app);

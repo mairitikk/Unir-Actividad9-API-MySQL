@@ -1,13 +1,13 @@
 const router = require('express').Router();
 
-/*const AlumnosController = require('../../controllers/alumnos.controller');
+const AutorsController = require('../../controllers/autors.controllers');
 
-router.get('/', AlumnosController.getAllAlumnos);
-router.get('/matricula', AlumnosController.getAlumnosMatricula);
-router.get('/:alumnoId', AlumnosController.getAlumnoById);
+router.get('/', AutorsController.getAllAutors);
+router.post('/', AutorsController.createAutors);
 
-router.post('/', AlumnosController.createAlumno);
-router.put('/:alumnoId', AlumnosController.updateAlumno);
-router.delete('/:alumnoId', AlumnosController.deleteAlumno);
-*/
+router.get('/:autorId', AutorsController.getAutorById);
+
+router.put('/:autorId', AutorsController.updateAutor);
+router.delete('/:autorId', AutorsController.deleteAutor);
+
 module.exports = router;
