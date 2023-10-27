@@ -1,13 +1,15 @@
 const router = require('express').Router();
-/*
-const AlumnosController = require('../../controllers/alumnos.controller');
 
-router.get('/', AlumnosController.getAllAlumnos);
-router.get('/matricula', AlumnosController.getAlumnosMatricula);
-router.get('/:alumnoId', AlumnosController.getAlumnoById);
 
-router.post('/', AlumnosController.createAlumno);
-router.put('/:alumnoId', AlumnosController.updateAlumno);
-router.delete('/:alumnoId', AlumnosController.deleteAlumno);
-*/
+const PostsController = require('../../controllers/posts.controller');
+router.get('/', PostsController.getAllPosts);
+router.post('/', PostsController.createPosts);
+
+router.get('/:postId', PostsController.getPostById);
+router.get('/autor/:idautor', PostsController.getPostByAutorId)
+
+router.put('/:postId', PostsController.updatePost);
+router.delete('/:postId', PostsController.deletePost);
+
+
 module.exports = router;
