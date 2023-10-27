@@ -34,3 +34,50 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/api/autors/4
+
+
+
+
+
+######## POSTS
+
+###
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "titulo": "Libro",
+    "description": "romane",
+    "fecha_de_creacion": "2023.02.20",
+    "categoria": "aburrido",
+    "autores_idautores": "5"
+
+}
+
+###
+GET http://localhost:3000/api/posts/
+
+###
+GET http://localhost:3000/api/posts/5
+
+###
+PUT http://localhost:3000/api/posts/1
+Content-Type: application/json
+
+
+    {
+    "titulo": "Libro",
+    "description": "crimi",
+    "fecha_de_creacion": "01.01.2023",
+    "categoria": "aburrido",
+    "autores_idautores": "1"
+
+}
+
+
+###
+DELETE http://localhost:3000/api/posts/6
+
+
+###
+GET http://localhost:3000/api/posts/autor/1
